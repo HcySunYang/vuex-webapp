@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+/* icon
+---------------------------------- */
+.icon::after {
+    background: url(../imgs/icon.png) no-repeat;
+    -webkit-background-size: 100px auto;
+    -ms-background-size: 100px auto;
+    background-size: 100px auto;
+}
+
+.icon {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.icon-phone {
+    width: 7px;
+    height: 10px;
+}
+
+.icon-phone::after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 10px;
+    background-position: -90px -40px;
+}
+
+.icon-package,
+.icon-resume,
+.icon-bookmark,
+.icon-member,
+.icon-recommend,
+.icon-contact,
+.icon-version,
+.icon-option,
+.icon-exit {
+    width: 14px;
+    height: 14px;
+}
+
+.icon-package::after,
+.icon-resume::after,
+.icon-bookmark::after,
+.icon-member::after,
+.icon-recommend::after,
+.icon-contact::after,
+.icon-version::after,
+.icon-option::after,
+.icon-exit::after {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-position: 0 -40px;
+}
+
+.icon-resume::after {
+    background-position: -15px -40px;
+}
+
+.icon-bookmark::after {
+    background-position: -30px -40px;
+}
+
+.icon-member::after {
+    background-position: -45px -40px;
+}
+
+.icon-recommend::after {
+    background-position: -60px -40px;
+}
+
+.icon-contact::after {
+    background-position: -75px -40px;
+}
+
+.icon-version::after {
+    background-position: 0 -55px;
+}
+
+.icon-option::after {
+    background-position: -15px -55px;
+}
+
+.icon-exit::after {
+    background-position: -30px -55px;
+}
+
+.icon-level-1,
+.icon-level-2,
+.icon-level-3,
+.icon-level-4 {
+    width: 20px;
+    height: 14px;
+}
+
+.icon-level-1::after,
+.icon-level-2::after,
+.icon-level-3::after,
+.icon-level-4::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 14px;
+    background-position: 0 -70px;
+}
+
+.icon-level-2::after {
+    background-position: -20px -70px;
+}
+
+.icon-level-3::after {
+    background-position: -40px -70px;
+}
+
+.icon-level-4::after {
+    background-position: -60px -70px;
+}
+
+/* personal
+---------------------------------- */
+.personal {
+    padding-bottom: 32px;
+}
+
+.user {
+    background: #fc0 url(../imgs/bg_personal.png) no-repeat center bottom;
+    -webkit-background-size: 375px auto;
+    -ms-background-size: 375px auto;
+    background-size: 375px auto;
+    padding: 40px 0 30px;
+    overflow: hidden;
+}
+
+.user-avatar {
+    float: left;
+    width: 62px;
+    height: 62px;
+    border: 2px solid #ffe500;
+    border-radius: 66px;
+    margin: 0 24px;
+    overflow: hidden;
+}
+
+.user-avatar img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 100%;
+}
+
+.user-name {
+    float: left;
+    max-width: 35%;
+    font-size: 18px;
+    line-height: 28px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.user-name a {
+    float: left;
+    margin-top: 14px;
+}
+
+.user-phone {
+    float: left;
+    font-size: 12px;
+    line-height: 28px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.user-phone .icon-phone {
+    float: left;
+    margin-top: 9px;
+    margin-right: 4px;
+}
+
+.user-member {
+    clear: both;
+    float: left;
+    display: inline-block;
+    background-color: #b28e00;
+    background-clip: padding-box;
+    border-radius: 18px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 6px;
+    margin-top: -28px;
+    margin-left: 114px;
+    overflow: hidden;
+}
+
+.user-member a {
+    color: #fff;
+}
+
+.user-member .icon {
+    float: left;
+    margin-top: 2px;
+    margin-right: 4px;
+}
+
+@media only screen and (max-width:375px) {
+    .user {
+        -webkit-background-size: 320px auto;
+        -ms-background-size: 320px auto;
+        background-size: 320px auto;
+    }
+
+    .user-avatar {
+        margin: 0 12px;
+    }
+
+    .user-member {
+        margin-left: 90px;
+    }
+
+}
+
+.wallet {
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.wallet .com-border-right::after {
+    top: 16px;
+    bottom: 16px;
+    height: auto;
+}
+
+.wallet .com-border-right:last-child::after {
+    display: none;
+}
+
+.wallet-info {
+    padding: 12px;
+    overflow: hidden;
+}
+
+.wallet-item {
+    display: block;
+}
+
+.wallet-value {
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: -1px;
+}
+
+.wallet-value:empty::after {
+    content: "--";
+}
+
+.wallet-opt {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: -11px;
+}
+
+.menu .mod-list-item.com-border-bottom::after {
+    left: 12px;
+}
+
+.menu .mod-list-item:last-child.com-border-bottom::after {
+    display: none;
+}
+
+.menu .mod-list-item .center {
+    text-align: center;
+}
+
+.menu .mod-list-info {
+    line-height: 24px;
+    padding: 10px 12px;
+}
+
+.menu .mod-list-info.com-arrow-right {
+    padding-right: 36px;
+}
+
+.menu small {
+    font-size: 10px;
+    margin-left: 4px;
+}
+
+.menu .icon {
+    float: left;
+    margin-top: 5px;
+    margin-right: 12px;
+}
+
+.menu .ds {
+    font-size: 12px;
+}
+
+.option .holder-group + .text-group {
+    color: #999;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 8px 12px;
+}
